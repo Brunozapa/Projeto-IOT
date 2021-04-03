@@ -1,0 +1,41 @@
+.pag-login{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15% 0;
+}
+.conteiner{
+
+}
+.box-login{
+display: inline-block;
+background-color: white;
+box-shadow: 3px 3px 5px 2px #ccc;
+padding: 40px 20px 0px 20px;
+border-radius: 20px;
+width: 400px;
+height: 300px;
+}
+.input-padrao{
+width: 50%;
+height: 25px;
+margin-bottom: 10%;
+display: inline-block;
+
+}
+.btn_green{
+color: white;
+background-color: green;
+margin: 20px 0 50px 0;
+border: 0;
+padding: 10px 20px;
+border-radius: 5px;
+float: left;
+cursor: pointer;
+}
+
+.pag-login .btn_green{
+margin-top: 10%;
+display: block;
+float: none;
+margin: auto;
+}

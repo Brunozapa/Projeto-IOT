@@ -1,0 +1,36 @@
+.pag_cadastro{
+    padding: 5% 0;
+    font-weight:600;
+}
+.conteiner_cadastro{
+    background-color: #ECF0F1;
+    max-width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.box_cadastro{
+    background-color: #ECF0F1;;
+    height: 600px;
+    width: 700px;
+    float: left;
+}
+.box_cadastro form{
+    margin-top: 50px;
+}
+.box_cadastro input{
+    height: 35px;
+    width: 500px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+}
+.img_cadastro {
+    margin-left: 130px;
+    background-color: #ECF0F1;;
+    height: 500px;
+    float: left;
+}
+.img_cadastro img{
+
+}
