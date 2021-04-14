@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" 
+    integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A==" 
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 500px; height: 700px; margin: 0 auto;">
+        <canvas id="chart" width="600" height="400" ></canvas>
+    </div>
+</body>
+</html>
+<script>
+    var ctx = chart.getContext('2d');
+        var myChart = new Chart(ctx, {  
+            type: 'radar', /* tipo de gráfico */
+            data: {
+                labels: ['Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro'], 
+                datasets: [{
+                    label: 'Casos de Covid-19',
+                    data: [28, 20, 16, 11, 10, 11, 18], /* Valores / dados*/
+                    backgroundColor: [
+                        'rgb(0, 94, 202,0.5)',
+                    ],
+                    borderColor: [
+                        'rgb(0, 138, 202)',
+                    ],
+                    borderWidth: 1
+                },
+                {
+                    label: 'Casos de Gripe',
+                    data: [10, 15, 11, 13, 15, 06, 08], /* Valores / dados*/
+                    backgroundColor: [
+                        'rgb(255, 68, 0, 0.5)',
+                    ],
+                    borderColor: [
+                        'rgb(255, 68, 0)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+</script>
